@@ -14,9 +14,9 @@
 #define HIGH    1
 #define LOW     0
 
-void LCD_voidSendString(const u8* String){
+void LCD_voidSendString(const u8* Str){
     u8 counter = 0;
-    while(String[counter] != '\0')
+    while(Str[counter] != '\0')
     {
         LCD_voidSendData(Str[counter]);
         ++counter;
